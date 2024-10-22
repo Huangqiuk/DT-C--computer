@@ -1,0 +1,94 @@
+T33C0 732:029.402   SEGGER J-Link V7.94e Log File
+T33C0 732:029.812   DLL Compiled: Jan 15 2024 15:13:38
+T33C0 732:029.838   Logging started @ 2024-08-24 07:21
+T33C0 732:029.853   Process: D:\Keil_v5\UV4\UV4.exe
+T33C0 732:029.865 - 718612.713ms
+T33C0 732:029.883 JLINK_SetWarnOutHandler(...)
+T33C0 732:029.895 - 0.011ms
+T33C0 732:029.905 JLINK_OpenEx(...)
+T33C0 732:033.836   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T33C0 732:034.544   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T33C0 732:034.653   Decompressing FW timestamp took 94 us
+T33C0 732:041.257   Hardware: V9.70
+T33C0 732:041.274   S/N: 20731672
+T33C0 732:041.281   OEM: SEGGER
+T33C0 732:041.288   Feature(s): JFlash
+T33C0 732:041.814   Bootloader: (Could not read)
+T33C0 732:042.568   TELNET listener socket opened on port 19021
+T33C0 732:047.938   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T33C0 732:049.118   WEBSRV Webserver running on local port 19080
+T33C0 732:049.239   Looking for J-Link GUI Server exe at: D:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T33C0 732:049.342   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V794e\JLinkGUIServer.exe
+T33C0 732:049.381   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V794e\JLinkGUIServer.exe
+T33C0 732:379.002   J-Link GUI Server info: "J-Link GUI server V7.94e "
+T33C0 732:381.745 - 351.838ms returns "O.K."
+T33C0 732:381.788 JLINK_GetEmuCaps()
+T33C0 732:381.796 - 0.007ms returns 0xB9FF7BBF
+T33C0 732:381.802 JLINK_TIF_GetAvailable(...)
+T33C0 732:382.050 - 0.247ms
+T33C0 732:382.083 JLINK_SetErrorOutHandler(...)
+T33C0 732:382.092 - 0.008ms
+T33C0 732:382.109 JLINK_ExecCommand("ProjectFile = "E:\svn\HMI\DigiTech\K31W\02-Soft\APP\V0.0.7\project\ble_peripheral\ble_app_uart\pca10040\s132\arm5_no_packs\JLinkSettings.ini"", ...). 
+T33C0 732:384.382 - 2.271ms returns 0x00
+T33C0 732:384.740 JLINK_ExecCommand("Device = nRF52832_xxAA", ...). 
+T33C0 732:385.107   Device "NRF52832_XXAA" selected.
+T33C0 732:385.422 - 0.657ms returns 0x00
+T33C0 732:385.432 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T33C0 732:385.440 - 0.001ms returns 0x01
+T33C0 732:385.447 JLINK_GetHardwareVersion()
+T33C0 732:385.452 - 0.005ms returns 97000
+T33C0 732:385.458 JLINK_GetDLLVersion()
+T33C0 732:385.463 - 0.004ms returns 79405
+T33C0 732:385.469 JLINK_GetOEMString(...)
+T33C0 732:385.475 JLINK_GetFirmwareString(...)
+T33C0 732:385.480 - 0.005ms
+T33C0 732:385.488 JLINK_GetDLLVersion()
+T33C0 732:385.493 - 0.004ms returns 79405
+T33C0 732:385.499 JLINK_GetCompileDateTime()
+T33C0 732:385.504 - 0.005ms
+T33C0 732:385.511 JLINK_GetFirmwareString(...)
+T33C0 732:385.515 - 0.004ms
+T33C0 732:385.521 JLINK_GetHardwareVersion()
+T33C0 732:385.526 - 0.004ms returns 97000
+T33C0 732:385.532 JLINK_GetSN()
+T33C0 732:385.537 - 0.005ms returns 20731672
+T33C0 732:385.542 JLINK_GetOEMString(...)
+T33C0 732:385.549 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T33C0 732:386.172 - 0.621ms returns 0x00
+T33C0 732:386.199 JLINK_HasError()
+T33C0 732:386.208 JLINK_SetSpeed(5000)
+T33C0 732:386.351 - 0.143ms
+T33C0 732:386.769 JLINK_HasError()
+T33C0 732:386.782 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T33C0 732:386.787 - 0.005ms returns JLINKARM_RESET_TYPE_NORMAL
+T33C0 732:386.794 JLINK_Reset()
+T33C0 732:387.019   InitTarget() start
+T33C0 732:387.029    J-Link Script File: Executing InitTarget()
+T33C0 732:489.203   InitTarget() end - Took 102ms
+T33C0 732:592.708   Failed to attach to CPU. Trying connect under reset.
+T33C0 733:187.484   InitTarget() start
+T33C0 733:187.529    J-Link Script File: Executing InitTarget()
+T33C0 733:292.718   InitTarget() end - Took 105ms
+T33C0 733:397.530 - 1010.734ms
+T33C0 733:397.582 JLINK_GetId()
+T33C0 733:397.858   InitTarget() start
+T33C0 733:397.880    J-Link Script File: Executing InitTarget()
+T33C0 733:503.823   InitTarget() end - Took 105ms
+T33C0 733:681.406   InitTarget() start
+T33C0 733:681.453    J-Link Script File: Executing InitTarget()
+T33C0 733:787.437   InitTarget() end - Took 105ms
+T33C0 733:891.821 - 494.236ms returns 0x00000000
+T33C0 733:891.870 JLINK_GetId()
+T33C0 733:892.187   InitTarget() start
+T33C0 733:892.221    J-Link Script File: Executing InitTarget()
+T33C0 733:997.972   InitTarget() end - Took 105ms
+T33C0 734:175.263   InitTarget() start
+T33C0 734:175.318    J-Link Script File: Executing InitTarget()
+T33C0 734:281.223   InitTarget() end - Took 105ms
+T33C0 734:386.738 - 494.865ms returns 0x00000000
+T33C0 734:391.659 JLINK_GetFirmwareString(...)
+T33C0 734:391.686 - 0.026ms
+T33C0 764:461.495 JLINK_Close()
+T33C0 764:474.478 - 12.982ms
+T33C0 764:474.507   
+T33C0 764:474.513   Closed

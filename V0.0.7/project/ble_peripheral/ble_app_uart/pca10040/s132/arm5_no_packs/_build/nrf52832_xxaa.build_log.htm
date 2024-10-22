@@ -1,0 +1,480 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 1, LIC=21E4T-RVWDP-GK0BG-VCE8G-36TJP-PCQZM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\svn\HMI\DigiTech\K31W\02-Soft\APP\V0.0.7\project\ble_peripheral\ble_app_uart\pca10040\s132\arm5_no_packs\ble_app_uart_pca10040_s132.uvprojx
+Project File Date:  08/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'nrf52832_xxaa'
+compiling utf.c...
+compiling ble_advdata.c...
+compiling boards.c...
+compiling bsp_btn_ble.c...
+compiling ble_advertising.c...
+..\..\..\..\..\..\components\ble\ble_advertising\ble_advertising.c(671): warning:  #177-D: variable "err_code"  was declared but never referenced
+  		uint32_t err_code = 0;
+..\..\..\..\..\..\components\ble\ble_advertising\ble_advertising.c: 1 warning, 0 errors
+compiling ble_conn_params.c...
+compiling bsp.c...
+compiling main.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\main.c(52): warning:  #177-D: variable "err_code"  was declared but never referenced
+      uint32_t err_code = 0;
+..\..\..\main.c(53): warning:  #177-D: variable "buff"  was declared but never referenced
+      char buff[10];
+..\..\..\main.c(55): warning:  #177-D: variable "erase_bonds"  was declared but never referenced
+      bool erase_bonds = 0;
+..\..\..\main.c: 16 warnings, 0 errors
+compiling ble_srv_common.c...
+compiling ble_link_ctx_manager.c...
+compiling nrf_ble_qwr.c...
+compiling nrf_ble_gatt.c...
+compiling ble_conn_state.c...
+compiling ble_nus.c...
+compiling nrf_drv_clock.c...
+compiling nrf_drv_uart.c...
+compiling nrfx_prs.c...
+compiling nrfx_atomic.c...
+compiling nrfx_clock.c...
+compiling nrfx_uarte.c...
+compiling nrfx_uart.c...
+compiling nrfx_gpiote.c...
+compiling app_error.c...
+compiling app_error_handler_keil.c...
+compiling app_fifo.c...
+compiling app_scheduler.c...
+compiling app_error_weak.c...
+compiling app_timer2.c...
+compiling app_button.c...
+compiling app_util_platform.c...
+compiling nrf_assert.c...
+compiling hardfault_implementation.c...
+compiling app_uart_fifo.c...
+compiling drv_rtc.c...
+compiling nrf_atflags.c...
+compiling nrf_atfifo.c...
+compiling nrf_atomic.c...
+compiling nrf_fprintf.c...
+compiling nrf_balloc.c...
+compiling nrf_fprintf_format.c...
+compiling nrf_memobj.c...
+compiling nrf_ringbuf.c...
+compiling nrf_section_iter.c...
+compiling nrf_pwr_mgmt.c...
+compiling nrf_sortlist.c...
+compiling nrf_strerror.c...
+compiling retarget.c...
+compiling nrf_log_backend_serial.c...
+compiling SEGGER_RTT_Syscalls_KEIL.c...
+compiling nrf_log_backend_rtt.c...
+compiling nrf_log_str_formatter.c...
+compiling nrf_log_default_backends.c...
+compiling nrf_log_frontend.c...
+compiling SEGGER_RTT.c...
+compiling User_ADC.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_ADC.c(50): warning:  #177-D: variable "buffer"  was declared but never referenced
+  	uint8_t buffer[50]={0};
+..\..\..\..\..\..\USER\Src\User_ADC.c: 14 warnings, 0 errors
+compiling nrf_sdh.c...
+..\..\..\..\..\..\components\softdevice\common\nrf_sdh.c(78): warning:  #1215-D: #warning directive: Please select NRF_CLOCK_LF_ACCURACY_500_PPM when using NRF_CLOCK_LF_SRC_RC
+      #warning Please select NRF_CLOCK_LF_ACCURACY_500_PPM when using NRF_CLOCK_LF_SRC_RC
+..\..\..\..\..\..\components\softdevice\common\nrf_sdh.c: 1 warning, 0 errors
+compiling SEGGER_RTT_printf.c...
+compiling nrf_sdh_ble.c...
+compiling nrf_sdh_soc.c...
+compiling User_Button.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_Button.c: 13 warnings, 0 errors
+compiling User_Ble.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_Ble.c(70): warning:  #177-D: variable "buffer"  was declared but never referenced
+      char buffer[15] = {0};
+..\..\..\..\..\..\USER\Src\User_Ble.c(128): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strncpy(receive_data, p_evt->params.rx_data.p_data, p_evt->params.rx_data.length);
+..\..\..\..\..\..\USER\Src\User_Ble.c(128): warning:  #167-D: argument of type "const uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strncpy(receive_data, p_evt->params.rx_data.p_data, p_evt->params.rx_data.length);
+..\..\..\..\..\..\USER\Src\User_Ble.c(151): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(arr, "nvm:%d", count++);
+..\..\..\..\..\..\USER\Src\User_Ble.c(152): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              updata_NVM_Record(arr, strlen(arr));
+..\..\..\..\..\..\USER\Src\User_Ble.c(131): warning:  #177-D: variable "err_code"  was declared but never referenced
+          uint32_t err_code;
+..\..\..\..\..\..\USER\Src\User_Ble.c(317): warning:  #177-D: variable "err_code"  was declared but never referenced
+      uint32_t err_code;
+..\..\..\..\..\..\USER\Src\User_Ble.c(417): warning:  #177-D: variable "addr_mac"  was declared but never referenced
+      uint8_t addr_mac[6] = {0};//¶ÁÈ¡ È«ÇòÎ¨Ò»MAC
+..\..\..\..\..\..\USER\Src\User_Ble.c(525): warning:  #111-D: statement is unreachable
+      switch (event)
+..\..\..\..\..\..\USER\Src\User_Ble.c(37): warning:  #177-D: variable "m_adv_uuids"  was declared but never referenced
+  static ble_uuid_t m_adv_uuids[]          =                                          /**< Universally unique service identifier. */
+..\..\..\..\..\..\USER\Src\User_Ble.c(620): warning:  #177-D: function "uart_init"  was declared but never referenced
+  static void uart_init(void)
+..\..\..\..\..\..\USER\Src\User_Ble.c: 24 warnings, 0 errors
+compiling User_LowPower.c...
+assembling arm_startup_nrf52.s...
+compiling User_Timer.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_Timer.c: 13 warnings, 0 errors
+compiling User_key.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_key.c(27): warning:  #188-D: enumerated type mixed with another type
+  		TIMER_AddTask(TIMER_ID_KEY_SCAN, 20, KEYMSG_CALLBACK_Scan, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_key.c(14): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i;
+..\..\..\..\..\..\USER\Src\User_key.c: 15 warnings, 0 errors
+compiling User_keyMsgProcess.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_keyMsgProcess.c: 13 warnings, 0 errors
+compiling system_nrf52.c...
+compiling User_LED.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_LED.c(67): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_R, action[LED_RED][1], LED_RED_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(79): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_R, action[LED_RED][0], LED_RED_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(90): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_YG, action[LED_YG][1], LED_YG_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(102): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_YG, action[LED_YG][0], LED_YG_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(128): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_R, action[led_name][0], LED_RED_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(134): warning:  #188-D: enumerated type mixed with another type
+          TIMER_AddTask(TIMER_ID_LED_YG, action[led_name][0], LED_YG_TRIG, 0, -1, 0);
+..\..\..\..\..\..\USER\Src\User_LED.c(138): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\..\..\..\USER\Src\User_LED.c: 20 warnings, 0 errors
+compiling User_NVM.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_NVM.c: 13 warnings, 0 errors
+compiling User_State.c...
+..\..\..\..\..\..\USER\Include\User_Ble.h(22): warning:  #1295-D: Deprecated declaration conn_params_init - give arg types
+  void conn_params_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(26): warning:  #1295-D: Deprecated declaration gatt_init - give arg types
+  void gatt_init();
+..\..\..\..\..\..\USER\Include\User_Ble.h(29): warning:  #1295-D: Deprecated declaration services_init - give arg types
+  void services_init();
+..\..\..\..\..\..\USER\Include\User_ADC.h(27): warning:  #1295-D: Deprecated declaration ADC_Process - give arg types
+  void ADC_Process();
+..\..\..\..\..\..\USER\Include\User_ADC.h(29): warning:  #1295-D: Deprecated declaration Get_ADC - give arg types
+  unsigned int Get_ADC();
+..\..\..\..\..\..\USER\Include\User_ADC.h(33): warning:  #1295-D: Deprecated declaration Get_Bat_Status - give arg types
+  unsigned char Get_Bat_Status();
+..\..\..\..\..\..\USER\Include\User_ADC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_Button.h(9): warning:  #1295-D: Deprecated declaration KEY_GPIO_Init - give arg types
+  void KEY_GPIO_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(6): warning:  #1295-D: Deprecated declaration User_NVM_Init - give arg types
+  void User_NVM_Init();
+..\..\..\..\..\..\USER\Include\User_NVM.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\..\..\USER\Include\User_LED.h(72): warning:  #1295-D: Deprecated declaration Led_Init - give arg types
+  void Led_Init();
+..\..\..\..\..\..\USER\Include\User_LED.h(76): warning:  #1295-D: Deprecated declaration Led_Uninit - give arg types
+  void Led_Uninit();
+..\..\..\..\..\..\USER\Include\User_Timer.h(94): warning:  #1295-D: Deprecated declaration Time_Init - give arg types
+  void Time_Init();
+..\..\..\..\..\..\USER\Src\User_State.c(132): warning:  #167-D: argument of type "void (*)(STATE_E)" is incompatible with parameter of type "void (*)(uint32_t)"
+          TIMER_AddTask(TIMER_ID_1MIN_TIMEOUT, 60000, STATE_EnterState, STATE_SLEEP, 1, ACTION_MODE_ADD_TO_QUEUE);
+..\..\..\..\..\..\USER\Src\User_State.c(139): warning:  #167-D: argument of type "void (*)(STATE_E)" is incompatible with parameter of type "void (*)(uint32_t)"
+          KEYMSG_RegisterMsgService(BUTTON_M_DEC, KEY_MSG_HOLD, STATE_EnterState, STATE_PAIR);
+..\..\..\..\..\..\USER\Src\User_State.c(166): warning:  #167-D: argument of type "void (*)(STATE_E)" is incompatible with parameter of type "void (*)(uint32_t)"
+          TIMER_AddTask(TIMER_ID_1MIN_TIMEOUT, 60000, STATE_EnterState, STATE_BROADCAST, 1, ACTION_MODE_ADD_TO_QUEUE);
+..\..\..\..\..\..\USER\Src\User_State.c(240): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\..\..\..\USER\Src\User_State.c: 17 warnings, 0 errors
+linking...
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol nrfx_saadc_channel_init (referred from user_adc.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol nrfx_saadc_init (referred from user_adc.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol nrfx_saadc_sample_convert (referred from user_adc.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_init (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_record_close (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_record_find (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_record_open (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_record_update (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_record_write (referred from user_nvm.o).
+.\_build\nrf52832_xxaa.axf: Error: L6218E: Undefined symbol fds_register (referred from user_nvm.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 10 error messages.
+".\_build\nrf52832_xxaa.axf" - 10 Error(s), 160 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM::CMSIS@5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.35.0.pack
+                NordicSemiconductor::nRF_DeviceFamilyPack@8.35.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.35.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_nrf52832_xxaa
+  D:/Keil_v5/Packs/ARM/CMSIS/5.6.0_tmp/CMSIS/Core/Include
+  D:/Keil_v5/Packs/NordicSemiconductor/nRF_DeviceFamilyPack/8.35.0_tmp/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup@8.35.0
+      Source file:   Device/Source/arm/arm_startup_nrf52.s
+      Source file:   Device/Source/system_nrf52.c
+      Include file:  Device/Include/system_nrf52.h
+      Include file:  Device/Include/system_nrf.h
+Target not created.
+Build Time Elapsed:  00:00:35
+</pre>
+</body>
+</html>
