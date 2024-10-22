@@ -1,0 +1,4 @@
+--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -W -O2 --apcs=interwork -I .\CMSIS -I .\CMSIS\core -I .\CMSIS\device -I .\Libraries\inc -I .\USER\Adc -I .\USER -I .\USER\Button -I .\USER\delay -I .\USER\Key -I .\USER\NFC\Inc -I .\USER\Time3 -I .\USER\Uart -I .\USER\Main
+-ID:\Keil_v5\Packs\Nations\N32G003_DFP\1.0.0\firmware\CMSIS\device
+-D__UVISION_VERSION="539" -DN32G003 -DUSE_STDPERIPH_DRIVER -DN32G003 -DUSE_STDPERIPH_DRIVER -DUSE_FULL_ASSERT
+-o .\objects\myiic.o --omf_browse .\objects\myiic.crf --depend .\objects\myiic.d "USER\NFC\Src\myiic.c"

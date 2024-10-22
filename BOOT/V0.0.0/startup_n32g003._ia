@@ -1,0 +1,4 @@
+--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-IC:\Users\Administrator\AppData\Local\Arm\Packs\Nationstech\N32G003_DFP\1.0.1\firmware\CMSIS\device
+--pd "__UVISION_VERSION SETA 538" --pd "N32G003 SETA 1" --pd "USE_STDPERIPH_DRIVER SETA 1"
+--list .\listings\startup_n32g003.lst --xref -o .\startup_n32g003.o --depend .\startup_n32g003.d "CMSIS\device\startup\startup_n32g003.s"
