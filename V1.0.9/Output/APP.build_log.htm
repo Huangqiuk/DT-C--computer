@@ -1,0 +1,218 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 1, LIC=21E4T-RVWDP-GK0BG-VCE8G-36TJP-PCQZM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\0809\ITA\V1.0.9\mdk_project.uvprojx
+Project File Date:  09/25/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Test'
+compiling systick.c...
+compiling timer.c...
+compiling gd32f10x_it.c...
+compiling system.c...
+compiling main.c...
+compiling iap.c...
+compiling spiflash.c...
+compiling timeout.c...
+compiling AvoDrive.c...
+compiling AvoProtocol.c...
+compiling PowerDrive.c...
+compiling DutUartDrive.c...
+compiling PowerProtocol.c...
+compiling DutUartProtocol.c...
+User\DutUartProtocol.c(491): warning:  #188-D: enumerated type mixed with another type
+      BOOL testResult = 0;
+User\DutUartProtocol.c(935): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "char *restrict"
+              strcpy(dut_info.bleVerBuff, &pCmdFrame->buff[DUT_PROTOCOL_CMD_DATA14_INDEX]);
+User\DutUartProtocol.c(935): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "const char *restrict"
+              strcpy(dut_info.bleVerBuff, &pCmdFrame->buff[DUT_PROTOCOL_CMD_DATA14_INDEX]);
+User\DutUartProtocol.c: 3 warnings, 0 errors
+compiling StsDrive.c...
+compiling AvoPin.c...
+compiling Lcd2004.c...
+User\Lcd2004.c(553): warning:  #928-D: incorrect use of va_start
+          va_start(args, format);
+User\Lcd2004.c(553): warning:  #928-D: incorrect use of va_start
+          va_start(args, format);
+User\Lcd2004.c: 2 warnings, 0 errors
+compiling StsProtocol.c...
+User\StsProtocol.c(1155): warning:  #188-D: enumerated type mixed with another type
+          offFlag = pCmdFrame->buff[STS_PROTOCOL_CMD_DATA3_INDEX];
+User\StsProtocol.c(1500): warning:  #188-D: enumerated type mixed with another type
+              dut_info.VLKFlag = pCmdFrame->buff[STS_PROTOCOL_CMD_DATA5_INDEX];
+User\StsProtocol.c(2710): warning:  #223-D: function "UART_PROTOCOL_Init" declared implicitly
+              UART_PROTOCOL_Init();        // 55升级协议
+User\StsProtocol.c(2711): warning:  #223-D: function "UART_PROTOCOL4_Init" declared implicitly
+              UART_PROTOCOL4_Init();
+User\StsProtocol.c(1065): warning:  #550-D: variable "writeRes"  was set but never used
+      BOOL writeRes;
+User\StsProtocol.c(1082): warning:  #550-D: variable "frame_Type"  was set but never used
+      uint8 frame_Type = 0;
+User\StsProtocol.c(1092): warning:  #177-D: variable "upItem"  was declared but never referenced
+      uint8 upItem = 0;
+User\StsProtocol.c(1093): warning:  #177-D: variable "clearItem"  was declared but never referenced
+      uint8 clearItem = 0;
+User\StsProtocol.c(1094): warning:  #177-D: variable "dutAll"  was declared but never referenced
+      uint8 dutAll[50] = {0};
+User\StsProtocol.c(1095): warning:  #177-D: variable "dutName_i"  was declared but never referenced
+      uint8 dutName_i = 0;
+User\StsProtocol.c(1096): warning:  #177-D: variable "dataLen"  was declared but never referenced
+      uint8 dataLen = 0;
+User\StsProtocol.c(1097): warning:  #177-D: variable "endItem"  was declared but never referenced
+      uint8 endItem = 0;
+User\StsProtocol.c(1098): warning:  #177-D: variable "ctrlState"  was declared but never referenced
+      uint8 ctrlState = 0;
+User\StsProtocol.c(1099): warning:  #177-D: variable "dut_info_len"  was declared but never referenced
+      uint8 dut_info_len = 0;
+User\StsProtocol.c(1100): warning:  #177-D: variable "size"  was declared but never referenced
+      uint8 size[4] = {0};
+User\StsProtocol.c(1104): warning:  #177-D: variable "j"  was declared but never referenced
+      uint32_t j = 0;
+User\StsProtocol.c(1105): warning:  #177-D: variable "noNumber"  was declared but never referenced
+      uint8 noNumber[43] = {0};  // 42个配置参数
+User\StsProtocol.c(1106): warning:  #177-D: variable "k"  was declared but never referenced
+      uint8 k = 0;
+User\StsProtocol.c: 18 warnings, 0 errors
+compiling key.c...
+compiling param.c...
+compiling state.c...
+User\state.c(1140): warning:  #223-D: function "THROTTLE_VCC_TEST_EN" declared implicitly
+              THROTTLE_VCC_TEST_EN(TRUE);
+User\state.c(2631): warning:  #223-D: function "THROTTLE_VCC_TEST_EN" declared implicitly
+              THROTTLE_VCC_TEST_EN(TRUE);
+User\state.c(3763): warning:  #188-D: enumerated type mixed with another type
+              dut_info.can = CAN_FF_STANDARD;
+User\state.c(4252): warning:  #223-D: function "THROTTLE_VCC_TEST_EN" declared implicitly
+              THROTTLE_VCC_TEST_EN(TRUE);
+User\state.c: 4 warnings, 0 errors
+compiling keyMsgProcess.c...
+compiling DutInfo.c...
+compiling UartProtocol3.c...
+User\UartProtocol3.c(456): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i = 0;
+User\UartProtocol3.c(457): warning:  #177-D: variable "checkMark"  was declared but never referenced
+      BOOL checkMark;
+User\UartProtocol3.c: 2 warnings, 0 errors
+compiling dutCtl.c...
+compiling stringOperation.c...
+User\stringOperation.c(510): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if (highNibble >= 0x0 && highNibble <= 0x9)
+User\stringOperation.c(532): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if (lowNibble >= 0x0 && lowNibble <= 0x9)
+User\stringOperation.c: 2 warnings, 0 errors
+compiling CanProtocolUpGB.c...
+User\CanProtocolUpGB.c(236): warning:  #188-D: enumerated type mixed with another type
+  	canProtocolCB.hmiState = 0;
+User\CanProtocolUpGB.c: 1 warning, 0 errors
+compiling UartProtocol.c...
+compiling CanProtocolUpDT.c...
+assembling startup_gd32f10x_xd.s...
+compiling CanProtocol_3A.c...
+User\CanProtocol_3A.c(516): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i = 0;
+User\CanProtocol_3A.c(519): warning:  #177-D: variable "checkMark"  was declared but never referenced
+      BOOL checkMark;
+User\CanProtocol_3A.c: 2 warnings, 0 errors
+compiling CanProtocolTest.c...
+User\CanProtocolTest.c(398): warning:  #550-D: variable "end"  was set but never used
+      uint16 end;
+User\CanProtocolTest.c(629): warning:  #188-D: enumerated type mixed with another type
+      BOOL testResult = 0;
+User\CanProtocolTest.c(1473): warning:  #223-D: function "CAN_MacProcess" declared implicitly
+                CAN_MacProcess(rxMessage1.rx_efid, &rxMessage1.rx_data[0], rxMessage1.rx_dlen);
+User\CanProtocolTest.c(1513): warning:  #223-D: function "CAN_Tx_NextFram" declared implicitly
+  		CAN_Tx_NextFram(&sysCanCB);
+User\CanProtocolTest.c(1516): warning:  #223-D: function "CAN_Tx_FillAndSend" declared implicitly
+  		CAN_Tx_FillAndSend(&sysCanCB);
+User\CanProtocolTest.c: 5 warnings, 0 errors
+compiling pwm.c...
+compiling adc.c...
+User\adc.c(62): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8 i;
+User\adc.c(63): warning:  #177-D: variable "vLevel"  was declared but never referenced
+  	uint8 vLevel = 1;
+User\adc.c(246): warning:  #223-D: function "Delayms" declared implicitly
+  	Delayms(10);
+User\adc.c(326): warning:  #177-D: variable "noCurrentActionFlag"  was declared but never referenced
+  	static BOOL noCurrentActionFlag = TRUE;
+User\adc.c(327): warning:  #177-D: variable "currentActionFlag"  was declared but never referenced
+  	static BOOL currentActionFlag = TRUE;
+User\adc.c: 5 warnings, 0 errors
+compiling UartProtocolXM.c...
+User\UartProtocolXM.c(171): warning:  #177-D: variable "i"  was declared but never referenced
+      uint16 i = 0;
+User\UartProtocolXM.c(553): warning:  #188-D: enumerated type mixed with another type
+      BOOL testResult = 0;
+User\UartProtocolXM.c(545): warning:  #177-D: variable "Peripheral_type"  was declared but never referenced
+      uint8 Peripheral_type = 0;
+User\UartProtocolXM.c(546): warning:  #177-D: variable "calibration_result"  was declared but never referenced
+      uint8 calibration_result = 0;
+User\UartProtocolXM.c(548): warning:  #177-D: variable "turn_state"  was declared but never referenced
+      uint8 turn_state = 0;
+User\UartProtocolXM.c: 5 warnings, 0 errors
+compiling gd32f10x_adc.c...
+compiling gd32f10x_bkp.c...
+compiling gd32f10x_can.c...
+compiling gd32f10x_crc.c...
+compiling gd32f10x_dbg.c...
+compiling gd32f10x_dac.c...
+compiling gd32f10x_enet.c...
+compiling gd32f10x_dma.c...
+compiling gd32f10x_exti.c...
+compiling gd32f10x_exmc.c...
+compiling gd32f10x_fmc.c...
+compiling gd32f10x_fwdgt.c...
+compiling gd32f10x_gpio.c...
+compiling gd32f10x_i2c.c...
+compiling gd32f10x_misc.c...
+compiling gd32f10x_pmu.c...
+compiling gd32f10x_rcu.c...
+compiling gd32f10x_rtc.c...
+compiling gd32f10x_sdio.c...
+compiling gd32f10x_spi.c...
+compiling gd32f10x_timer.c...
+compiling gd32f10x_usart.c...
+compiling gd32f10x_wwdgt.c...
+compiling system_gd32f10x.c...
+linking...
+Program Size: Code=74788 RO-data=872 RW-data=800 ZI-data=85672  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin .\Output\APP.axf -o  ./Output/APP.bin
+".\Output\APP.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F10x_DFP.2.0.3.pack
+                GigaDevice::GD32F10x_DFP@2.0.3
+                GigaDevice GD32F10x Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Keil_v5/Packs/GigaDevice/GD32F10x_DFP/2.0.3/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:15
+</pre>
+</body>
+</html>
